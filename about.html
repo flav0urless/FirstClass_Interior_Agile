@@ -6,10 +6,15 @@
  
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="loader.css">
+ 
   <link rel="stylesheet" href="bootstrap.min2.css">
   <script src="load.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 
   <title>Tech->Connect</title>
@@ -24,50 +29,92 @@
   </style>
 </head>
 <body>
-  <div id="loading-container">
-    
-    <div id="progress-container">
-      <div id="progress-bar"></div>
-    </div>
-  </div>
+  <div id="preloader data-aos="slide-down>
+
+		<div class="preloader-logo" >
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="0 0 452.84 205.175">
+
+			  <g id="Layer_1" data-name="Layer 1" transform="translate(-677.215 -457)">
+
+			    <path id="Path_1" data-name="Path 1" d="M921.442,546.554c-17.011,13.59-29.758,32.791-44.171,46.237-27.119,25.313-51.385,12.342-87.146-8.455-12.989-7.554-81.331-59.572-111.6-83.995a3.465,3.465,0,0,1,3.21-6c67.83,21.626,139.413,67.209,160.961,47.464,28.878-26.463,64.446-46.075,100.021-33.834,13.26,4.559,33.269,22.491,44,35.957a3.466,3.466,0,0,1-4,5.374C961.338,540.9,937.786,533.5,921.442,546.554Z" fill="#5c5552"/>
+
+			  </g>
+
+			  <g id="Layer_2" data-name="Layer 2" transform="translate(-677.215 -457)">
+
+			    <path id="Path_2" data-name="Path 2" d="M1125.843,496.694a2.939,2.939,0,0,1,3.7,4.283c-8.7,12.948-27.414,29.143-40,36.009-33.022,18.028-63.793,17.051-96.7-4.2-25.011-16.154-43.621-52.961-102.8-31.557a2.94,2.94,0,0,1-3.178-4.739c9.25-10.187,19.438-19.34,31.538-26.287,32.1-18.429,63.755-17.627,94.732,2.786,16.462,10.841,33.385,20.638,52.559,25.953C1086.313,504.642,1106.453,505.62,1125.843,496.694Z" fill="#ed3d01"/>
+
+			  </g>
+
+			  <g id="Layer_3" data-name="Layer 3" transform="translate(-677.215 -457)">
+
+			    <circle id="Ellipse_1" data-name="Ellipse 1" cx="24.994" cy="24.994" r="24.994" transform="translate(958.191 563.471)" fill="#5c5552"/>
+
+			  </g>
+
+			  <g id="Layer_4" data-name="Layer 4" transform="translate(-677.215 -457)">
+
+			    <circle id="Ellipse_2" data-name="Ellipse 2" cx="24.994" cy="24.994" r="24.994" transform="translate(915.569 612.188)" fill="#ed3d01"/>
+
+			  </g>
+
+			</svg>
+
+		</div>
+
+	</div>
 
 
-<div data-aos="slide-down">
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <div class="d-flex align-items-center">
-          <img   src="image/tcup.png" alt=""  style="margin-right: 30px;margin-left: 30px;">
-          <span class="navbar-text" style="margin-right: 50px;">Tech->Connect</span> 
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor01">
-          <div class="ml-auto"> 
-              <form class="d-flex">
-                  <ul class="navbar-nav"> 
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html">Home
-                              <span class="visually-hidden">(current)</span>
-                          </a>  
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link active" href="about.html">About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                          </li>
-                          
-                      </ul>
-                     
-                  </form>
-              </div>
-          </div>
-      </div>
-  </nav>
+ 
+
+
+  
+
+
+  <div data-aos="slide-down">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/tcup.png" alt="" style="margin-right: 30px; margin-left: 30px;">
+                <span class="navbar-text">Tech->Connect</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control" type="search" placeholder="Search">
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-secondary" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
 </div>
 
 <div class="text-center" data-aos="zoom-in" style="margin-top: 0; margin-bottom: 50px; position: relative;">
@@ -329,7 +376,7 @@
     <img height="40" src="https://shoplineimg.com/assets/footer/card_jcb.png"/>
   </div>
   
-      © 9/11 Copyright: Smith private Limited
+      © 9/11 Copyright: Rxkz
      
     </div>
     
