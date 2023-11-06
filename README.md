@@ -1,4 +1,4 @@
-# FirstClass_Interior_Agile
+# TechConnect_Agile
 Description: 
 
     TechConnect is a well-known tech retailer specializing in selling the latest gadgets, electronics, and cutting-edge tech products. They are looking to promote their business nationwide to increase sales.
